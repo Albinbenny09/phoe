@@ -27,21 +27,6 @@ const MobileTestimonialsCarousel = ({ testimonials }: { testimonials: any[] }) =
     setTimeout(() => setIsAutoPlaying(true), 6000);
   };
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-    setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 6000);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-    setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 6000);
-  };
 
   return (
     <div className="md:hidden mb-8">
@@ -81,26 +66,6 @@ const MobileTestimonialsCarousel = ({ testimonials }: { testimonials: any[] }) =
           </div>
         </div>
 
-        {/* Navigation Arrows */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-3 top-1/2 transform -translate-y-1/2 w-9 h-9 bg-white/90 hover:bg-white rounded-full shadow-md flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:scale-110 border border-gray-200/60"
-          aria-label="Previous testimonial"
-        >
-          <svg className="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        
-        <button
-          onClick={nextSlide}
-          className="absolute right-3 top-1/2 transform -translate-y-1/2 w-9 h-9 bg-white/90 hover:bg-white rounded-full shadow-md flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:scale-110 border border-gray-200/60"
-          aria-label="Next testimonial"
-        >
-          <svg className="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
 
         {/* Dots Indicator */}
         <div className="flex justify-center space-x-2.5 mt-6">

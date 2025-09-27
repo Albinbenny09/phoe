@@ -1,7 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import FeaturesBanner from "@/components/FeaturesBanner";
+import PopularProducts from "@/components/PopularProducts";
 import About from "@/components/About";
-import Services from "@/components/Services";
+import ProductCategories from "@/components/ProductCategories";
 import PartnersCarousel from "@/components/PartnersCarousel";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
@@ -13,11 +15,14 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Services />
+        <FeaturesBanner />
+        <PopularProducts />
+        <ProductCategories />
         <About />
-        <PartnersCarousel />
+       
         <Testimonials />
-        <Contact />
+        <PartnersCarousel />
+       
       </main>
       <Footer />
     </div>

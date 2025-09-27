@@ -113,13 +113,13 @@ const Footer = () => {
           {/* E-commerce Partners */}
           <div className="lg:col-span-1">
             <h3 className="text-xl font-bold mb-6 text-white">E-Commerce Partners</h3>
-            <div className="space-y-4">
+            <div className="space-y-4 text-left">
               {ECOMMERCE_PARTNERS.map((partner) => (
-                <div key={partner.name} className="bg-white bg-opacity-10 rounded-lg p-3 hover:bg-opacity-20 transition-all duration-300">
+                <div key={partner.name} className="transition-all duration-300 hover:opacity-80 flex justify-start items-center">
                   <Image
                     src={partner.src}
                     alt={`${partner.name} logo - PHOE Electricals partner`}
-                    className="w-full h-8 object-contain"
+                    className="h-8 object-contain max-w-full"
                     width={120}
                     height={32}
                     loading="lazy"
@@ -133,13 +133,13 @@ const Footer = () => {
           {/* Shipping Partners */}
           <div className="lg:col-span-1">
             <h3 className="text-xl font-bold mb-6 text-white">Shipping Partners</h3>
-            <div className="space-y-4">
+            <div className="space-y-4 text-left">
               {DELIVERY_PARTNERS.map((partner) => (
-                <div key={partner.name} className="bg-white bg-opacity-10 rounded-lg p-3 hover:bg-opacity-20 transition-all duration-300">
+                <div key={partner.name} className="transition-all duration-300 hover:opacity-80 flex justify-start items-center">
                   <Image
                     src={partner.src}
                     alt={`${partner.name} logo - PHOE Electricals partner`}
-                    className="w-full h-8 object-contain"
+                    className="h-8 object-contain max-w-full"
                     width={120}
                     height={32}
                     loading="lazy"

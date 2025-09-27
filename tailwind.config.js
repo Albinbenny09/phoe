@@ -53,6 +53,7 @@ module.exports = {
         "deep-teal": "hsl(var(--deep-teal))",
         "light-gray": "hsl(var(--light-gray))",
         "dark-gray": "hsl(var(--dark-gray))",
+        "slate-gray": "#6B7280",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
