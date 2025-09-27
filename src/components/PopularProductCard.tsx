@@ -7,9 +7,10 @@ interface PopularProductCardProps {
 }
 
 const PopularProductCard = ({ imgURL, name, price }: PopularProductCardProps) => {
-  // Generate random rating between 4.0 and 5.0 (4.0, 4.5, or 5.0)
+  // Generate deterministic rating based on product name (consistent between server and client)
   const ratingValues = [4.0, 4.5, 5.0];
-  const rating = ratingValues[Math.floor(Math.random() * ratingValues.length)].toFixed(1);
+  const nameHash = name.split('').reduce((hash, char) => hash + char.charCodeAt(0), 0);
+  const rating = ratingValues[nameHash % ratingValues.length].toFixed(1);
   const fullStars = Math.floor(parseFloat(rating));
   const hasHalfStar = parseFloat(rating) % 1 >= 0.5;
 
