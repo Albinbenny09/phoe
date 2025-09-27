@@ -60,16 +60,16 @@ const MobileCarousel = ({ products }: { products: Product[] }) => {
       <div className="relative overflow-hidden bg-gray-50/30 rounded-2xl py-6">
         {/* Infinite Scrolling Container */}
         <div className="relative h-80">
-          <div className="flex animate-scroll">
+          <div className="flex animate-scroll" style={{ width: `${products.length * 2 * 256}px` }}>
             {/* First set of products */}
             {products.map((product, index) => (
-              <div key={`first-${product.name}`} className="flex-shrink-0 mx-3">
+              <div key={`first-${product.name}`} className="flex-shrink-0 w-64 px-2">
                 <PopularProductCard {...product} />
               </div>
             ))}
             {/* Duplicate set for seamless loop */}
             {products.map((product, index) => (
-              <div key={`second-${product.name}`} className="flex-shrink-0 mx-3">
+              <div key={`second-${product.name}`} className="flex-shrink-0 w-64 px-2">
                 <PopularProductCard {...product} />
               </div>
             ))}

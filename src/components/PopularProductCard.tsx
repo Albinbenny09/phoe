@@ -8,8 +8,8 @@ interface PopularProductCardProps {
 
 const PopularProductCard = ({ imgURL, name, price }: PopularProductCardProps) => {
   return (
-    <div className="flex flex-1 flex-col w-full max-sm:w-full bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
-      <div className="w-full h-64 flex items-center justify-center mb-4">
+    <div className="flex flex-1 flex-col w-full max-sm:w-full bg-white rounded-2xl shadow-sm border border-gray-100 p-3 md:p-6 transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+      <div className="w-full h-40 md:h-64 flex items-center justify-center mb-3">
         <Image 
           src={imgURL} 
           alt={name} 
@@ -19,12 +19,12 @@ const PopularProductCard = ({ imgURL, name, price }: PopularProductCardProps) =>
           loading="lazy"
         />
       </div>
-      <div className="mt-4 flex justify-start gap-2.5">
+      <div className="mt-2 flex justify-start gap-2">
         <div className="flex items-center">
           {[...Array(5)].map((_, i) => (
             <svg
               key={i}
-              className="w-5 h-5 text-yellow-400"
+              className="w-4 h-4 md:w-5 md:h-5 text-yellow-400"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -32,13 +32,16 @@ const PopularProductCard = ({ imgURL, name, price }: PopularProductCardProps) =>
             </svg>
           ))}
         </div>
-        <p className="text-lg leading-normal text-slate-gray">
+        <p className="text-sm md:text-lg leading-normal text-slate-gray">
           (4.5)
         </p>
       </div>
-      <h3 className="mt-2 text-xl leading-normal font-semibold overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+      <h3 className="mt-2 text-sm md:text-xl leading-tight font-semibold overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
         {name}
       </h3>
+      <p className="mt-2 text-base md:text-lg font-semibold text-primary">
+        {price}
+      </p>
       
     </div>
   );
