@@ -1,0 +1,233 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+
+// Environment variables
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://phoeelectric.com';
+const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const gscVerificationCode = process.env.NEXT_PUBLIC_GSC_VERIFICATION_CODE;
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "PHOE Electricals Trading LLC",
+    template: "%s | PHOE Electricals Trading LLC"
+  },
+  description: "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Quality solutions for industrial and commercial sectors.",
+  keywords: ["electrical supplies", "automation", "electronics", "Dubai", "UAE", "industrial", "commercial", "PHOE Electricals"],
+  authors: [{ name: "PHOE Electricals Trading LLC" }],
+  creator: "PHOE Electricals Trading LLC",
+  publisher: "PHOE Electricals Trading LLC",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    title: "PHOE Electricals Trading LLC",
+    description: "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Quality solutions for industrial and commercial sectors.",
+    siteName: "PHOE Electricals Trading LLC",
+    images: [
+      {
+        url: `${siteUrl}/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "PHOE Electricals Trading LLC Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PHOE Electricals Trading LLC",
+    description: "Leading supplier of electrical, automation, and electronics products in Dubai, UAE.",
+    images: [`${siteUrl}/logo.png`],
+    creator: "@phoeelectricals",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: gscVerificationCode,
+  },
+  category: "technology",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        {/* Favicon and PWA */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        
+        {/* Theme Colors */}
+        <meta name="theme-color" content="#019999" />
+        <meta name="msapplication-TileColor" content="#019999" />
+        
+        {/* Font Preloading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        
+        {/* DNS Prefetch for external resources */}
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        
+        {/* Preload critical resources */}
+        <link rel="preload" href="/logo.png" as="image" type="image/png" />
+        <link rel="preload" href="/banner-video.mp4" as="video" type="video/mp4" />
+        
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "PHOE Electricals Trading LLC",
+              "alternateName": "PHOE Electricals",
+              "url": siteUrl,
+              "logo": `${siteUrl}/logo.png`,
+              "description": "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Quality solutions for industrial and commercial sectors.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "AE",
+                "addressRegion": "Dubai",
+                "addressLocality": "Dubai"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+971-58-833-9415",
+                "contactType": "customer service",
+                "areaServed": "AE",
+                "availableLanguage": "English"
+              },
+              "hasMap": "https://maps.google.com/?q=PHOE+Electricals+Trading+LLC+Dubai",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "25.2048",
+                "longitude": "55.2708"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/phoe-electricals",
+                "https://www.facebook.com/phoeelectricals",
+                "https://www.instagram.com/phoeelectricals"
+              ],
+              "foundingDate": "2020",
+              "industry": "Electrical Equipment Manufacturing",
+              "numberOfEmployees": "10-50",
+              "areaServed": {
+                "@type": "Country",
+                "name": "United Arab Emirates"
+              }
+            })
+          }}
+        />
+        
+        {/* Local Business Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": `${siteUrl}#business`,
+              "name": "PHOE Electricals Trading LLC",
+              "image": `${siteUrl}/logo.png`,
+              "description": "Leading supplier of electrical, automation, and electronics products in Dubai, UAE",
+              "url": siteUrl,
+              "telephone": "+971-58-833-9415",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Dubai, UAE",
+                "addressLocality": "Dubai",
+                "addressRegion": "Dubai",
+                "postalCode": "",
+                "addressCountry": "AE"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "25.2048",
+                "longitude": "55.2708"
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              "priceRange": "$$",
+              "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+              "currenciesAccepted": "AED, USD",
+              "areaServed": {
+                "@type": "Country",
+                "name": "United Arab Emirates"
+              },
+              "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "25.2048",
+                  "longitude": "55.2708"
+                },
+                "geoRadius": "50000"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Electrical and Automation Products",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Product",
+                      "name": "Electrical Switchgear Components"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Product",
+                      "name": "Automation Solutions"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Product",
+                      "name": "Industrial Electronics"
+                    }
+                  }
+                ]
+              }
+            })
+          }}
+        />
+      </head>
+      <body className="min-h-screen bg-background font-sans antialiased">
+        {children}
+        <GoogleAnalytics />
+      </body>
+    </html>
+  );
+}
