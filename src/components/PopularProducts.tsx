@@ -16,11 +16,7 @@ const products: Product[] = [
     name: "CONT 25A AC3 11KW 1NO 1NC 110VAC COIL",
     price: "AED 150"
   },
-  {
-    imgURL: "/Best-Selling/Easy9 MCB 1P 6A C 6000A 240V.webp",
-    name: "Easy9 MCB 1P 6A C 6000A 240V",
-    price: "AED 85"
-  },
+
   {
     imgURL: "/Best-Selling/Easy9 MCB 2P 63A C 10000A 415V.webp",
     name: "Easy9 MCB 2P 63A C 10000A 415V",
@@ -50,6 +46,11 @@ const products: Product[] = [
     imgURL: "/Best-Selling/TeSys GV2 MPCB Overload Protection range of 1-1.6A.webp",
     name: "TeSys GV2 MPCB Overload Protection 1-1.6A",
     price: "AED 220"
+  } ,
+   {
+    imgURL: "/Best-Selling/Easy9 MCB 1P 6A C 6000A 240V.webp",
+    name: "Easy9 MCB 1P 6A C 6000A 240V",
+    price: "AED 85"
   }
 ];
 

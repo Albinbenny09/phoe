@@ -120,12 +120,10 @@ const PartnersCarousel = () => {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <p className="uppercase tracking-wider text-sm text-muted-foreground font-semibold mb-3">
-            Trusted by industry leaders worldwide
-          </p>
+         
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our <span className="text-primary relative">
-              Partner Network
+          Dealing <span className="text-primary relative">
+          Brands
               <svg className="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 200 12" fill="none">
                 <path d="M2 10C50 2 150 2 198 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" className="text-primary/30"/>
               </svg>
@@ -137,10 +135,7 @@ const PartnersCarousel = () => {
         </div>
 
         <div className="mb-8">
-          <SectionHeader 
-            title="Dealing Brands"
-            description="World-leading manufacturers of electrical, automation, and industrial solutions"
-          />
+         
           {/* Mobile Carousel */}
           <MobileCarousel partners={MANUFACTURING_PARTNERS} />
           {/* Desktop Grid */}

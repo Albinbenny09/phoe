@@ -16,13 +16,19 @@ const PopularProductCard = ({ imgURL, name, price }: PopularProductCardProps) =>
 
   return (
     <div className="flex flex-col w-full h-80 md:h-96 max-sm:w-full bg-white rounded-2xl shadow-sm border border-gray-100 p-3 md:p-6 transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
-      <div className="w-full h-40 md:h-64 flex items-center justify-center mb-3">
+      <div className="w-full h-40 md:h-64 flex items-center justify-center mb-3 bg-gray-50 rounded-lg">
         <Image 
           src={imgURL} 
           alt={name} 
           width={280} 
           height={280}
           className="w-full h-full object-contain"
+          style={{ 
+            maxWidth: '100%', 
+            maxHeight: '100%',
+            width: 'auto',
+            height: 'auto'
+          }}
           loading="lazy"
         />
       </div>
