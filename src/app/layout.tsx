@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "PHOE Electricals Trading LLC",
     images: [
       {
-        url: `${siteUrl}/logo.png`,
+        url: `${siteUrl}/favicon.ico`,
         width: 1200,
         height: 630,
         alt: "PHOE Electricals Trading LLC Logo",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PHOE Electricals Trading LLC",
     description: "Leading supplier of electrical, automation, and electronics products in Dubai, UAE.",
-    images: [`${siteUrl}/logo.png`],
+    images: [`${siteUrl}/favicon.ico`],
     creator: "@phoeelectricals",
   },
   robots: {
@@ -74,11 +74,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Favicon and PWA */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        {/* Favicon - Next.js automatically detects favicon.ico from public folder */}
+        <link rel="icon" href="/favicon.ico?v=1" />
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* Theme Colors */}
@@ -95,7 +92,6 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         
         {/* Preload critical resources */}
-        <link rel="preload" href="/logo.png" as="image" type="image/png" />
         <link rel="preload" href="/banner-video.mp4" as="video" type="video/mp4" />
         
         {/* JSON-LD Structured Data */}
@@ -108,7 +104,7 @@ export default function RootLayout({
               "name": "PHOE Electricals Trading LLC",
               "alternateName": "PHOE Electricals",
               "url": siteUrl,
-              "logo": `${siteUrl}/logo.png`,
+              "logo": `${siteUrl}/favicon.ico`,
               "description": "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Quality solutions for industrial and commercial sectors.",
               "address": {
                 "@type": "PostalAddress",
@@ -154,7 +150,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "@id": `${siteUrl}#business`,
               "name": "PHOE Electricals Trading LLC",
-              "image": `${siteUrl}/logo.png`,
+              "image": `${siteUrl}/favicon.ico`,
               "description": "Leading supplier of electrical, automation, and electronics products in Dubai, UAE",
               "url": siteUrl,
               "telephone": "+971-58-833-9415",
