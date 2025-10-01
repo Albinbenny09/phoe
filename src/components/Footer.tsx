@@ -30,7 +30,7 @@ const Footer = () => {
             <Image 
               src="/logo.png" 
               alt="PHOE Electricals Trading LLC Logo - Leading electrical and automation supplier Dubai UAE" 
-              className="h-12 w-auto mb-6 brightness-0 invert"
+              className="h-12 w-auto mb-6 "
               width={200}
               height={48}
               loading="eager"

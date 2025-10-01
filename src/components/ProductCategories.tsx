@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import ProductCategoryCard from "./ProductCategoryCard";
+import ProductCategoryCardClient from "./client/ProductCategoryCardClient";
 
 // Product category data based on images in product-category folder
 interface ProductCategory {
@@ -73,7 +71,7 @@ const ProductCategories = () => {
               className="animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <ProductCategoryCard 
+              <ProductCategoryCardClient 
                 imgURL={category.imgURL}
                 name={category.name}
                 description={category.description}

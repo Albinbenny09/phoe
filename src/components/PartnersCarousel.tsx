@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 
 type Partner = { name: string; src: string };
@@ -54,7 +52,7 @@ const MobileCarousel = ({ partners }: { partners: Partner[] }) => {
       <div className="relative overflow-hidden bg-gray-50/30 rounded-2xl py-6">
         {/* Infinite Scrolling Container */}
         <div className="relative h-40">
-          <div className="flex animate-scroll">
+          <div className="flex animate-scroll" style={{ width: `${partners.length * 2 * 200}px` }}>
             {/* First set of partners */}
             {partners.map((partner, index) => (
               <div key={`first-${partner.name}`} className="flex-shrink-0 mx-6">

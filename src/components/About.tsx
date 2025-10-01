@@ -30,9 +30,9 @@ const About = () => {
             <Image 
               src="/about-image.jpg" 
               alt="Modern electrical control room with automation systems at PHOE Electricals Dubai UAE"
-              className="rounded-2xl shadow-elegant w-full h-auto object-cover"
+              className="rounded-2xl shadow-elegant w-full h-[500px] object-cover"
               width={600}
-              height={500}
+              height={700}
               loading="lazy"
               title="PHOE Electricals Modern Control Room"
               priority={false}
