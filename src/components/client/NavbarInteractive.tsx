@@ -30,7 +30,6 @@ const NavbarInteractive = () => {
       <nav className="hidden md:flex items-center gap-8 absolute right-4 top-1/2 transform -translate-y-1/2">
         <button onClick={() => scrollToSection('home')} className="text-gray-800 hover:text-[#019999] text-base font-semibold transition-colors">Home</button>
         <button onClick={() => scrollToSection('about')} className="text-gray-800 hover:text-[#019999] text-base font-semibold transition-colors">About</button>
-        <button onClick={() => scrollToSection('services')} className="text-gray-800 hover:text-[#019999] text-base font-semibold transition-colors">Services</button>
         <button onClick={() => scrollToSection('partners-carousel')} className="text-gray-800 hover:text-[#019999] text-base font-semibold transition-colors">Partners</button>
         <button onClick={callPhone} className="text-gray-800 hover:text-[#019999] text-base font-semibold transition-colors">Contact</button>
       </nav>
@@ -50,7 +49,6 @@ const NavbarInteractive = () => {
           <nav className="px-4 py-4 space-y-4">
             <button onClick={() => scrollToSection('home')} className="block w-full text-left text-gray-800 hover:text-[#019999] font-semibold">Home</button>
             <button onClick={() => scrollToSection('about')} className="block w-full text-left text-gray-800 hover:text-[#019999] font-semibold">About</button>
-            <button onClick={() => scrollToSection('services')} className="block w-full text-left text-gray-800 hover:text-[#019999] font-semibold">Services</button>
             <button onClick={() => scrollToSection('partners-carousel')} className="block w-full text-left text-gray-800 hover:text-[#019999] font-semibold">Partners</button>
             <button onClick={callPhone} className="block w-full text-left text-gray-800 hover:text-[#019999] font-semibold">Contact</button>
             <button 
