@@ -150,10 +150,13 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "@id": `${siteUrl}#business`,
               "name": "PHOE Electricals Trading LLC",
-              "image": `${siteUrl}/favicon.ico`,
-              "description": "Leading supplier of electrical, automation, and electronics products in Dubai, UAE",
+              "alternateName": "PHOE Electricals",
+              "image": `${siteUrl}/PhoeLogo.webp`,
+              "logo": `${siteUrl}/PhoeLogo.webp`,
+              "description": "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Quality solutions for industrial and commercial sectors with brands like Schneider Electric, Siemens, ABB, and more.",
               "url": siteUrl,
               "telephone": "+971-58-833-9415",
+              "email": "info@phoeelectric.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Dubai, UAE",
@@ -167,12 +170,20 @@ export default function RootLayout({
                 "latitude": "25.2048",
                 "longitude": "55.2708"
               },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "09:00",
-                "closes": "18:00"
-              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Saturday",
+                  "opens": "09:00",
+                  "closes": "14:00"
+                }
+              ],
               "priceRange": "$$",
               "paymentAccepted": "Cash, Credit Card, Bank Transfer",
               "currenciesAccepted": "AED, USD",
@@ -197,24 +208,56 @@ export default function RootLayout({
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Product",
-                      "name": "Electrical Switchgear Components"
+                      "name": "Circuit Breakers and Switches",
+                      "description": "MCB, MCCB, ACB, RCCB & RCBO, Motor Protection Circuit Breakers"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Product",
-                      "name": "Automation Solutions"
+                      "name": "Contactor Relay & Protection Relays",
+                      "description": "TeSys series contactors and comprehensive relay protection systems"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Product",
-                      "name": "Industrial Electronics"
+                      "name": "Automation Solutions",
+                      "description": "AC Drives (VFD), PLC & HMI systems, Temperature Controllers"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Product",
+                      "name": "Power & Distribution",
+                      "description": "Power & Network Cables, Isolators, Switches & Sockets"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Product",
+                      "name": "Monitoring & Instrumentation",
+                      "description": "Digital Panel Meters, Energy Meters, Power Factor Controllers"
                     }
                   }
                 ]
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/phoe-electricals",
+                "https://www.facebook.com/phoeelectricals",
+                "https://www.instagram.com/phoeelectricals"
+              ],
+              "foundingDate": "2020",
+              "industry": "Electrical Equipment Manufacturing",
+              "numberOfEmployees": "10-50",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "25"
               }
             })
           }}
