@@ -164,22 +164,6 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Developer Credit */}
-          <div className="mt-6 pt-6 border-t border-gray-700">
-            <div className="flex flex-col items-center space-y-1">
-              <span className="text-gray-500 text-xs font-light">
-                Crafted with precision by
-              </span>
-              <a 
-                href="https://albin-benny-port-folio-site.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group transition-all duration-300 hover:scale-105"
-              >
-                <span className="text-xs font-medium tracking-wider text-teal-400 hover:text-teal-300 transition-colors" style={{ fontFamily: "'Inter', sans-serif" }}>A. Benny</span>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </footer>

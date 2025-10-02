@@ -10,11 +10,8 @@ const HeroButtons = () => {
     window.open(whatsappUrl, '_blank');
   };
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const callPhone = () => {
+    window.open('tel:+971588339415', '_self');
   };
 
   return (
@@ -27,7 +24,7 @@ const HeroButtons = () => {
         Get a Quote
       </Button>
       <Button 
-        onClick={scrollToContact}
+        onClick={callPhone}
         size="lg" 
         variant="outline" 
         className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-gray-800 transition-all duration-300 text-lg px-8 py-4"
