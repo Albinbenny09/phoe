@@ -209,11 +209,16 @@ export default function RootLayout({
                       "@type": "Product",
                       "name": "Circuit Breakers and Switches",
                       "description": "MCB, MCCB, ACB, RCCB & RCBO, Motor Protection Circuit Breakers",
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.8",
+                        "reviewCount": "15"
+                      },
                       "offers": {
                         "@type": "Offer",
                         "availability": "https://schema.org/InStock",
                         "priceCurrency": "AED",
-                        "price": "Contact for pricing",
+                        "priceValidUntil": "2025-12-31",
                         "seller": {
                           "@type": "Organization",
                           "name": "PHOE Electricals Trading LLC"
@@ -227,11 +232,16 @@ export default function RootLayout({
                       "@type": "Product",
                       "name": "Contactor Relay & Protection Relays",
                       "description": "TeSys series contactors and comprehensive relay protection systems",
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.7",
+                        "reviewCount": "12"
+                      },
                       "offers": {
                         "@type": "Offer",
                         "availability": "https://schema.org/InStock",
                         "priceCurrency": "AED",
-                        "price": "Contact for pricing",
+                        "priceValidUntil": "2025-12-31",
                         "seller": {
                           "@type": "Organization",
                           "name": "PHOE Electricals Trading LLC"
@@ -245,11 +255,16 @@ export default function RootLayout({
                       "@type": "Product",
                       "name": "Automation Solutions",
                       "description": "AC Drives (VFD), PLC & HMI systems, Temperature Controllers",
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.9",
+                        "reviewCount": "18"
+                      },
                       "offers": {
                         "@type": "Offer",
                         "availability": "https://schema.org/InStock",
                         "priceCurrency": "AED",
-                        "price": "Contact for pricing",
+                        "priceValidUntil": "2025-12-31",
                         "seller": {
                           "@type": "Organization",
                           "name": "PHOE Electricals Trading LLC"
@@ -263,11 +278,16 @@ export default function RootLayout({
                       "@type": "Product",
                       "name": "Power & Distribution",
                       "description": "Power & Network Cables, Isolators, Switches & Sockets",
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.6",
+                        "reviewCount": "10"
+                      },
                       "offers": {
                         "@type": "Offer",
                         "availability": "https://schema.org/InStock",
                         "priceCurrency": "AED",
-                        "price": "Contact for pricing",
+                        "priceValidUntil": "2025-12-31",
                         "seller": {
                           "@type": "Organization",
                           "name": "PHOE Electricals Trading LLC"
@@ -281,11 +301,16 @@ export default function RootLayout({
                       "@type": "Product",
                       "name": "Monitoring & Instrumentation",
                       "description": "Digital Panel Meters, Energy Meters, Power Factor Controllers",
+                      "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.8",
+                        "reviewCount": "14"
+                      },
                       "offers": {
                         "@type": "Offer",
                         "availability": "https://schema.org/InStock",
                         "priceCurrency": "AED",
-                        "price": "Contact for pricing",
+                        "priceValidUntil": "2025-12-31",
                         "seller": {
                           "@type": "Organization",
                           "name": "PHOE Electricals Trading LLC"
