@@ -208,7 +208,17 @@ export default function RootLayout({
                     "itemOffered": {
                       "@type": "Product",
                       "name": "Circuit Breakers and Switches",
-                      "description": "MCB, MCCB, ACB, RCCB & RCBO, Motor Protection Circuit Breakers"
+                      "description": "MCB, MCCB, ACB, RCCB & RCBO, Motor Protection Circuit Breakers",
+                      "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "priceCurrency": "AED",
+                        "price": "Contact for pricing",
+                        "seller": {
+                          "@type": "Organization",
+                          "name": "PHOE Electricals Trading LLC"
+                        }
+                      }
                     }
                   },
                   {
@@ -216,7 +226,17 @@ export default function RootLayout({
                     "itemOffered": {
                       "@type": "Product",
                       "name": "Contactor Relay & Protection Relays",
-                      "description": "TeSys series contactors and comprehensive relay protection systems"
+                      "description": "TeSys series contactors and comprehensive relay protection systems",
+                      "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "priceCurrency": "AED",
+                        "price": "Contact for pricing",
+                        "seller": {
+                          "@type": "Organization",
+                          "name": "PHOE Electricals Trading LLC"
+                        }
+                      }
                     }
                   },
                   {
@@ -224,7 +244,17 @@ export default function RootLayout({
                     "itemOffered": {
                       "@type": "Product",
                       "name": "Automation Solutions",
-                      "description": "AC Drives (VFD), PLC & HMI systems, Temperature Controllers"
+                      "description": "AC Drives (VFD), PLC & HMI systems, Temperature Controllers",
+                      "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "priceCurrency": "AED",
+                        "price": "Contact for pricing",
+                        "seller": {
+                          "@type": "Organization",
+                          "name": "PHOE Electricals Trading LLC"
+                        }
+                      }
                     }
                   },
                   {
@@ -232,7 +262,17 @@ export default function RootLayout({
                     "itemOffered": {
                       "@type": "Product",
                       "name": "Power & Distribution",
-                      "description": "Power & Network Cables, Isolators, Switches & Sockets"
+                      "description": "Power & Network Cables, Isolators, Switches & Sockets",
+                      "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "priceCurrency": "AED",
+                        "price": "Contact for pricing",
+                        "seller": {
+                          "@type": "Organization",
+                          "name": "PHOE Electricals Trading LLC"
+                        }
+                      }
                     }
                   },
                   {
@@ -240,7 +280,17 @@ export default function RootLayout({
                     "itemOffered": {
                       "@type": "Product",
                       "name": "Monitoring & Instrumentation",
-                      "description": "Digital Panel Meters, Energy Meters, Power Factor Controllers"
+                      "description": "Digital Panel Meters, Energy Meters, Power Factor Controllers",
+                      "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "priceCurrency": "AED",
+                        "price": "Contact for pricing",
+                        "seller": {
+                          "@type": "Organization",
+                          "name": "PHOE Electricals Trading LLC"
+                        }
+                      }
                     }
                   }
                 ]
