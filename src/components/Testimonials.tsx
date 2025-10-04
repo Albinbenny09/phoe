@@ -31,7 +31,7 @@ const Testimonials = () => {
             What Our <span className="text-primary">Clients Say</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Trusted by leading companies across the UAE for quality electrical solutions and exceptional service.
+            Trusted by leading companies across the UAE for quality electrical solutions and exceptional service. Schneider electric supplier & Distributor in Dubai & Saudi Arabia.
           </p>
         </div>
 

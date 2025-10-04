@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     default: "PHOE Electricals Trading LLC",
     template: "%s | PHOE Electricals Trading LLC"
   },
-  description: "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Quality solutions for industrial and commercial sectors.",
-  keywords: ["electrical supplies", "automation", "electronics", "Dubai", "UAE", "industrial", "commercial", "PHOE Electricals"],
+  description: "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Schneider electric supplier & Distributor in Dubai & Saudi Arabia. Quality solutions for industrial and commercial sectors.",
+  keywords: ["electrical supplies", "automation", "electronics", "Dubai", "UAE", "industrial", "commercial", "PHOE Electricals", "Schneider electric supplier", "Schneider distributor Dubai", "Schneider distributor Saudi Arabia"],
   authors: [{ name: "PHOE Electricals Trading LLC" }],
   creator: "PHOE Electricals Trading LLC",
   publisher: "PHOE Electricals Trading LLC",
@@ -31,11 +31,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     title: "PHOE Electricals Trading LLC",
-    description: "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Quality solutions for industrial and commercial sectors.",
+    description: "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Schneider electric supplier & Distributor in Dubai & Saudi Arabia. Quality solutions for industrial and commercial sectors.",
     siteName: "PHOE Electricals Trading LLC",
     images: [
       {
-        url: `${siteUrl}/favicon.ico`,
+        url: `${siteUrl}/PhoeLogo.webp`,
         width: 1200,
         height: 630,
         alt: "PHOE Electricals Trading LLC Logo",
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "PHOE Electricals Trading LLC",
-    description: "Leading supplier of electrical, automation, and electronics products in Dubai, UAE.",
-    images: [`${siteUrl}/favicon.ico`],
+    description: "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Schneider electric supplier & Distributor in Dubai & Saudi Arabia.",
+    images: [`${siteUrl}/PhoeLogo.webp`],
     creator: "@phoeelectricals",
   },
   robots: {
@@ -74,9 +74,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Favicon - Next.js automatically detects favicon.ico from public folder */}
-        <link rel="icon" href="/favicon.ico?v=1" />
-        <link rel="manifest" href="/site.webmanifest" />
+        {/* Favicon Setup - Next.js automatically handles favicon files in app directory */}
+        <link rel="manifest" href="/manifest.json" />
         
         {/* Theme Colors */}
         <meta name="theme-color" content="#019999" />
@@ -104,8 +103,8 @@ export default function RootLayout({
               "name": "PHOE Electricals Trading LLC",
               "alternateName": "PHOE Electricals",
               "url": siteUrl,
-              "logo": `${siteUrl}/favicon.ico`,
-              "description": "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Quality solutions for industrial and commercial sectors.",
+              "logo": `${siteUrl}/PhoeLogo.webp`,
+              "description": "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Schneider electric supplier & Distributor in Dubai & Saudi Arabia. Quality solutions for industrial and commercial sectors.",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "AE",
@@ -128,7 +127,7 @@ export default function RootLayout({
               "sameAs": [
                 "https://www.linkedin.com/company/phoe-electricals",
                 "https://www.facebook.com/phoeelectricals",
-                "https://www.instagram.com/phoeelectricals"
+                "https://www.instagram.com/phoe_electric/"
               ],
               "foundingDate": "2020",
               "industry": "Electrical Equipment Manufacturing",
@@ -153,7 +152,7 @@ export default function RootLayout({
               "alternateName": "PHOE Electricals",
               "image": `${siteUrl}/PhoeLogo.webp`,
               "logo": `${siteUrl}/PhoeLogo.webp`,
-              "description": "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Quality solutions for industrial and commercial sectors with brands like Schneider Electric, Siemens, ABB, and more.",
+              "description": "Leading supplier of electrical, automation, and electronics products in Dubai, UAE. Schneider electric supplier & Distributor in Dubai & Saudi Arabia. Quality solutions for industrial and commercial sectors with brands like Schneider Electric, Siemens, ABB, and more.",
               "url": siteUrl,
               "telephone": "+971-58-833-9415",
               "email": "info@phoeelectric.com",
@@ -249,7 +248,7 @@ export default function RootLayout({
               "sameAs": [
                 "https://www.linkedin.com/company/phoe-electricals",
                 "https://www.facebook.com/phoeelectricals",
-                "https://www.instagram.com/phoeelectricals"
+                "https://www.instagram.com/phoe_electric/"
               ],
               "foundingDate": "2020",
               "industry": "Electrical Equipment Manufacturing",

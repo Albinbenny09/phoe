@@ -47,9 +47,9 @@ const About = () => {
             
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
             Phoe Electricals Trading LLC is a leading Dubai-based supplier and trusted partner for premium electrical and automation
- products, serving the industrial, commercial, and infrastructural sectors across the UAE and beyond. With an extensive
+ products, serving the industrial, commercial, and infrastructural sectors across the UAE and beyond. As a Schneider electric supplier & Distributor in Dubai & Saudi Arabia, we offer an extensive
  portfolio that includes switchgear components, control and automation systems, power cables, lighting solutions, and wiring
- accessories, we deliver reliable and high-performing products sourced from internationally recognized manufacturers.
+ accessories, delivering reliable and high-performing products sourced from internationally recognized manufacturers.
             </p>
 
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">

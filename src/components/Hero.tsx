@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-slide-up">
-          Quality, Reliability, and Prompt Service for Industrial and Commercial Sectors Worldwide.
+          Quality, Reliability, and Prompt Service for Industrial and Commercial Sectors Worldwide. Schneider electric supplier & Distributor in Dubai & Saudi Arabia.
           </p>
           
           {/* Interactive Elements - Client Rendered */}

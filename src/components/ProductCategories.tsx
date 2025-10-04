@@ -60,7 +60,7 @@ const ProductCategories = () => {
             Our Products & <span className="text-primary">Ranges</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Comprehensive electrical, automation, and electronics solutions for industrial and commercial applications across the UAE.
+            Comprehensive electrical, automation, and electronics solutions for industrial and commercial applications across the UAE. Schneider electric supplier & Distributor in Dubai & Saudi Arabia.
           </p>
         </div>
 

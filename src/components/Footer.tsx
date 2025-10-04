@@ -38,7 +38,7 @@ const Footer = () => {
             />
             <p className="text-gray-300 mb-6 leading-relaxed">
               Leading supplier of electrical, automation, and electronics products in Dubai, UAE. 
-              Quality solutions for industrial and commercial sectors.
+              Schneider electric supplier & Distributor in Dubai & Saudi Arabia. Quality solutions for industrial and commercial sectors.
             </p>
             
             <div className="flex space-x-3">
@@ -70,7 +70,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://www.instagram.com/phoeelectricals" 
+                href="https://www.instagram.com/phoe_electric/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-400 transition-all duration-300 hover:scale-110"

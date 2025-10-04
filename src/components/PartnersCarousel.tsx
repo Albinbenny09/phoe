@@ -128,7 +128,7 @@ const PartnersCarousel = () => {
             </span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From manufacturing to delivery, we work with the best in every sector to ensure excellence at every step.
+            From manufacturing to delivery, we work with the best in every sector to ensure excellence at every step. Schneider electric supplier & Distributor in Dubai & Saudi Arabia.
           </p>
         </div>
 
