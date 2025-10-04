@@ -209,6 +209,7 @@ export default function RootLayout({
                       "@type": "Product",
                       "name": "Circuit Breakers and Switches",
                       "description": "MCB, MCCB, ACB, RCCB & RCBO, Motor Protection Circuit Breakers",
+                      "image": `${siteUrl}/product-category/Circuit Breakers and Switches.jpg`,
                       "aggregateRating": {
                         "@type": "AggregateRating",
                         "ratingValue": "4.8",
@@ -218,7 +219,31 @@ export default function RootLayout({
                         "@type": "Offer",
                         "availability": "https://schema.org/InStock",
                         "priceCurrency": "AED",
+                        "price": "50.00",
                         "priceValidUntil": "2025-12-31",
+                        "shippingDetails": {
+                          "@type": "OfferShippingDetails",
+                          "shippingRate": {
+                            "@type": "MonetaryAmount",
+                            "value": "0",
+                            "currency": "AED"
+                          },
+                          "deliveryTime": {
+                            "@type": "ShippingDeliveryTime",
+                            "businessDays": {
+                              "@type": "OpeningHoursSpecification",
+                              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+                            },
+                            "cutoffTime": "14:00"
+                          }
+                        },
+                        "hasMerchantReturnPolicy": {
+                          "@type": "MerchantReturnPolicy",
+                          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                          "merchantReturnDays": 30,
+                          "returnMethod": "https://schema.org/ReturnByMail",
+                          "returnFees": "https://schema.org/FreeReturn"
+                        },
                         "seller": {
                           "@type": "Organization",
                           "name": "PHOE Electricals Trading LLC"
@@ -232,6 +257,7 @@ export default function RootLayout({
                       "@type": "Product",
                       "name": "Contactor Relay & Protection Relays",
                       "description": "TeSys series contactors and comprehensive relay protection systems",
+                      "image": `${siteUrl}/product-category/Contactor Relay & Protection Relays.jpg`,
                       "aggregateRating": {
                         "@type": "AggregateRating",
                         "ratingValue": "4.7",
@@ -241,7 +267,31 @@ export default function RootLayout({
                         "@type": "Offer",
                         "availability": "https://schema.org/InStock",
                         "priceCurrency": "AED",
+                        "price": "50.00",
                         "priceValidUntil": "2025-12-31",
+                        "shippingDetails": {
+                          "@type": "OfferShippingDetails",
+                          "shippingRate": {
+                            "@type": "MonetaryAmount",
+                            "value": "0",
+                            "currency": "AED"
+                          },
+                          "deliveryTime": {
+                            "@type": "ShippingDeliveryTime",
+                            "businessDays": {
+                              "@type": "OpeningHoursSpecification",
+                              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+                            },
+                            "cutoffTime": "14:00"
+                          }
+                        },
+                        "hasMerchantReturnPolicy": {
+                          "@type": "MerchantReturnPolicy",
+                          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                          "merchantReturnDays": 30,
+                          "returnMethod": "https://schema.org/ReturnByMail",
+                          "returnFees": "https://schema.org/FreeReturn"
+                        },
                         "seller": {
                           "@type": "Organization",
                           "name": "PHOE Electricals Trading LLC"
@@ -255,6 +305,7 @@ export default function RootLayout({
                       "@type": "Product",
                       "name": "Automation Solutions",
                       "description": "AC Drives (VFD), PLC & HMI systems, Temperature Controllers",
+                      "image": `${siteUrl}/product-category/Variable Speed Drives and Soft Starters.jpg`,
                       "aggregateRating": {
                         "@type": "AggregateRating",
                         "ratingValue": "4.9",
@@ -264,7 +315,31 @@ export default function RootLayout({
                         "@type": "Offer",
                         "availability": "https://schema.org/InStock",
                         "priceCurrency": "AED",
+                        "price": "50.00",
                         "priceValidUntil": "2025-12-31",
+                        "shippingDetails": {
+                          "@type": "OfferShippingDetails",
+                          "shippingRate": {
+                            "@type": "MonetaryAmount",
+                            "value": "0",
+                            "currency": "AED"
+                          },
+                          "deliveryTime": {
+                            "@type": "ShippingDeliveryTime",
+                            "businessDays": {
+                              "@type": "OpeningHoursSpecification",
+                              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+                            },
+                            "cutoffTime": "14:00"
+                          }
+                        },
+                        "hasMerchantReturnPolicy": {
+                          "@type": "MerchantReturnPolicy",
+                          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                          "merchantReturnDays": 30,
+                          "returnMethod": "https://schema.org/ReturnByMail",
+                          "returnFees": "https://schema.org/FreeReturn"
+                        },
                         "seller": {
                           "@type": "Organization",
                           "name": "PHOE Electricals Trading LLC"
@@ -278,6 +353,7 @@ export default function RootLayout({
                       "@type": "Product",
                       "name": "Power & Distribution",
                       "description": "Power & Network Cables, Isolators, Switches & Sockets",
+                      "image": `${siteUrl}/product-category/Light Switches and Electrical Sockets.jpg`,
                       "aggregateRating": {
                         "@type": "AggregateRating",
                         "ratingValue": "4.6",
@@ -287,7 +363,31 @@ export default function RootLayout({
                         "@type": "Offer",
                         "availability": "https://schema.org/InStock",
                         "priceCurrency": "AED",
+                        "price": "50.00",
                         "priceValidUntil": "2025-12-31",
+                        "shippingDetails": {
+                          "@type": "OfferShippingDetails",
+                          "shippingRate": {
+                            "@type": "MonetaryAmount",
+                            "value": "0",
+                            "currency": "AED"
+                          },
+                          "deliveryTime": {
+                            "@type": "ShippingDeliveryTime",
+                            "businessDays": {
+                              "@type": "OpeningHoursSpecification",
+                              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+                            },
+                            "cutoffTime": "14:00"
+                          }
+                        },
+                        "hasMerchantReturnPolicy": {
+                          "@type": "MerchantReturnPolicy",
+                          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                          "merchantReturnDays": 30,
+                          "returnMethod": "https://schema.org/ReturnByMail",
+                          "returnFees": "https://schema.org/FreeReturn"
+                        },
                         "seller": {
                           "@type": "Organization",
                           "name": "PHOE Electricals Trading LLC"
@@ -301,6 +401,7 @@ export default function RootLayout({
                       "@type": "Product",
                       "name": "Monitoring & Instrumentation",
                       "description": "Digital Panel Meters, Energy Meters, Power Factor Controllers",
+                      "image": `${siteUrl}/product-category/Electrical Protection and Control.jpg`,
                       "aggregateRating": {
                         "@type": "AggregateRating",
                         "ratingValue": "4.8",
@@ -310,7 +411,31 @@ export default function RootLayout({
                         "@type": "Offer",
                         "availability": "https://schema.org/InStock",
                         "priceCurrency": "AED",
+                        "price": "50.00",
                         "priceValidUntil": "2025-12-31",
+                        "shippingDetails": {
+                          "@type": "OfferShippingDetails",
+                          "shippingRate": {
+                            "@type": "MonetaryAmount",
+                            "value": "0",
+                            "currency": "AED"
+                          },
+                          "deliveryTime": {
+                            "@type": "ShippingDeliveryTime",
+                            "businessDays": {
+                              "@type": "OpeningHoursSpecification",
+                              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+                            },
+                            "cutoffTime": "14:00"
+                          }
+                        },
+                        "hasMerchantReturnPolicy": {
+                          "@type": "MerchantReturnPolicy",
+                          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                          "merchantReturnDays": 30,
+                          "returnMethod": "https://schema.org/ReturnByMail",
+                          "returnFees": "https://schema.org/FreeReturn"
+                        },
                         "seller": {
                           "@type": "Organization",
                           "name": "PHOE Electricals Trading LLC"
