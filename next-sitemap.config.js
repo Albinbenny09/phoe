@@ -9,17 +9,18 @@ module.exports = {
     ],
   },
   transform: async (config, path) => {
+    // Set higher priority for homepage
+    const priority = path === '/' ? 1.0 : config.priority;
     return {
       loc: path,
       changefreq: config.changefreq,
-      priority: config.priority,
+      priority: priority,
       lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
     }
   },
   additionalPaths: async (config) => {
     return [
-      await config.transform(config, '/blog'),
-      await config.transform(config, '/blog/future-industrial-automation-uae'),
+      await config.transform(config, '/'),
     ]
   },
 }
